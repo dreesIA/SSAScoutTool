@@ -1,8 +1,39 @@
 streamlit==1.28.1
 pandas==2.1.3
+numpy==1.24.3
 plotly==5.18.0
 requests==2.31.0
 beautifulsoup4==4.12.2
 lxml==4.9.3
 selenium==4.15.2
 webdriver-manager==4.0.1
+xlsxwriter==3.1.9
+scikit-learn==1.3.2
+python-dotenv==1.0.0
+
+# .env.example
+# Database Configuration
+DATABASE_PATH=soccer_scout.db
+
+# API Keys (obtain from respective services)
+FBREF_API_KEY=your_fbref_api_key_here
+TRANSFERMARKT_API_KEY=your_transfermarkt_api_key_here
+ASA_API_KEY=your_american_soccer_analysis_api_key_here
+SOFASCORE_API_KEY=your_sofascore_api_key_here
+
+# Cache Settings
+CACHE_TTL_HOURS=6
+MAX_CACHE_SIZE_MB=100
+
+# Scraping Settings
+RATE_LIMIT_DELAY_SECONDS=2
+MAX_CONCURRENT_REQUESTS=3
+REQUEST_TIMEOUT_SECONDS=30
+
+# Chrome Driver Settings (for Selenium)
+CHROME_HEADLESS=true
+CHROME_NO_SANDBOX=true
+
+# Export Settings
+EXPORT_PATH=./exports/
+MAX_EXPORT_ROWS=10000
